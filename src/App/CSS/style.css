@@ -1,0 +1,32 @@
+body {
+  background: lightgray;
+  text-align: center;
+  padding: 50px;
+}
+
+.myCard {
+  border: 2px solid black;
+  background: lightblue;
+  width: 50%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+button {
+  padding: 10px;
+  margin: 10px;
+}
+
+.toggle-button {
+  margin: 10px;
+}
+
+h1,
+h2,
+p {
+  padding: 10px;
+  margin-top: 10px;
+  color: black;
+  margin-bottom: 20px;
+}
