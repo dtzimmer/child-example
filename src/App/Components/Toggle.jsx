@@ -3,7 +3,7 @@ import { Checkbox } from "semantic-ui-react";
 
 const Toggle = props => {
   return (
-    <Checkbox toggle onClick={props.handleClick} className="toggle-button" />
+    <Checkbox toggle onClick={props.handleToggle} className="toggle-button" />
   );
 };
 

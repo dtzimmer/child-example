@@ -14,10 +14,19 @@ class Main extends Component {
     };
   }
 
-  handleClick = () => {
+  handleToggle = () => {
     this.setState({ isClicked: !this.state.isClicked }, () =>
       console.log(this.state.isClicked)
     );
+  };
+
+  handleClick = (e, bool) => {
+    e.preventDefault();
+    if (bool === "true") {
+      this.setState({ isClicked: true });
+    } else if (bool === "false") {
+      this.setState({ isClicked: false });
+    }
   };
 
   render() {
@@ -26,7 +35,7 @@ class Main extends Component {
         <h1>HappyCard.com</h1>
         <Card>
           <Button changeClick={this.handleClick} />
-          <Toggle handleClick={this.handleClick} />
+          <Toggle handleToggle={this.handleToggle} />
           <Text text={this.state.mytext} clickStatus={this.state.isClicked} />
         </Card>
       </div>
